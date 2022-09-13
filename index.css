@@ -17,7 +17,10 @@ h3 {
 .container {
     display: flex;
     justify-content: space-around;
-    min-width: 500px;
+    min-width: 400px;
+    max-width: 800px;
+    height: 100vh;
+    margin: auto;
 }
 
 .board-title {
@@ -26,7 +29,7 @@ h3 {
 }
 
 .score {
-    width: 140px;
+    width: 160px;
     margin-top: -40px;
     margin-bottom: -40px;
     border-radius: 5px;
@@ -49,4 +52,17 @@ button {
     border-radius: 5px;
     padding: 10px;
     text-align: center;
+    height: 50px;
+    width: 50px;
+}
+
+button:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: transform .1s;
+}
+
+button:active {
+    background: #9AABD8;
+    color: #1B244A;
+    transition: background .1s, color .1s;
 }
